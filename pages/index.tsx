@@ -1,7 +1,11 @@
-import type { NextPage } from "next";
+import EditableEl from "../components/EditableEl";
 
-const Home: NextPage = () => {
-    return <section className="text-5xl font-bold">Welcome!</section>;
-};
+function TableRow() {
+    return (
+        <div className="js__row flex w-auto justify-center gap-4 border-b py-2 last:border-b-0">
+            <EditableEl pnl={76} />
+        </div>
+    );
+}
 
-export default Home;
+export default TableRow;
